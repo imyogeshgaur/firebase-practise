@@ -1,0 +1,14 @@
+.modal-content {
+  background-color: rgb(221, 157, 221);
+}
+.btn-primary {
+  background-color: purple;
+  border: none;
+  outline: none;
+}
+.btn-primary:hover {
+  background-color: rgb(107, 243, 137);
+}
+.btn-primary:focus {
+  background-color: rgb(107, 243, 137);
+}
