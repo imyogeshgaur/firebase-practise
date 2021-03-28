@@ -47,3 +47,9 @@ body{
     background-color:rgb(247, 168, 115);
 }
 
+.error{
+    color:red;
+    margin-top: 2rem;
+    font-size: large;
+}
+

@@ -8,50 +8,84 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <label class="userLabel" for="Name">Name</label>
-      <input 
-        type="text" 
-        class="userInput" 
-        placeholder="Enter Your Name" 
-      />
+     <div class="container">
+            <label class="userLabel" for="Name">Name</label>
+            <input 
+              type="text" 
+              class="userInput" 
+              placeholder="Enter Your Name"
+              id="userName"
+              value="" 
+            />
+      
+            <label class="userLabel" for="Email">Email</label>
+            <input 
+              type="text" 
+              class="userInput" 
+              placeholder="Enter Your Email"
+              id="userEmail" 
+              value=""
+            />
+      
+            <label class="userLabel" for="Age">Age</label>
+            <input 
+              type="text" 
+              class="userInput" 
+              placeholder="Enter Your Age" 
+              id="userAge"
+              value=""
+            />
+      
+            <label class="userLabel" for="Phone">Phone</label>
+            <input
+              type="text"
+              class="userInput"
+              placeholder="Enter Your Phone Number"
+              id="userPhone"
+              value=""
+            />
+      
+            <label class="userLabel" for="Password">Password</label>
+            <input
+              type="password"
+              class="userInput"
+              placeholder="Enter Your Password"
+              id="userPassword"
+              value=""
+            />
+      
+            <label class="userLabel" for="Cpassword">Confirm Password</label>
+            <input
+              type="password"
+              class="userInput"
+              placeholder="Confirm Your Password"
+              id="userCPassword"
+              value=""
+            />
+      
+            <button type="submit" class="btn" onclick="submitForm()">Submit</button>
 
-      <label class="userLabel" for="Email">Email</label>
-      <input 
-        type="text" 
-        class="userInput" 
-        placeholder="Enter Your Email" 
-      />
+            <div class="error"></div>
 
-      <label class="userLabel" for="Age">Age</label>
-      <input 
-        type="text" 
-        class="userInput" 
-        placeholder="Enter Your Age" 
-      />
+            <!-- <div class="meassage"></div> -->
+     </div>
+ <script src="script/database.js"></script>
+ 
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
 
-      <label class="userLabel" for="Phone">Phone</label>
-      <input
-        type="text"
-        class="userInput"
-        placeholder="Enter Your Phone Number"
-      />
-
-      <label class="userLabel" for="Password">Password</label>
-      <input
-        type="password"
-        class="userInput"
-        placeholder="Enter Your Password"
-      />
-
-      <label class="userLabel" for="Cpassword">Confirm Password</label>
-      <input
-        type="password"
-        class="userInput"
-        placeholder="Confirm Your Password"
-      />
-
-      <button type="submit" onclick="submitForm()" class="btn">Submit</button>
-    </div>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDzRhw7MLpDg-UHvDYt-aF2sWyJJtH74Ug",
+    authDomain: "cloud-firestore-f501c.firebaseapp.com",
+    projectId: "cloud-firestore-f501c",
+    storageBucket: "cloud-firestore-f501c.appspot.com",
+    messagingSenderId: "35184172487",
+    appId: "1:35184172487:web:007ab9a41cebd15e9c8de2"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
   </body>
 </html>
