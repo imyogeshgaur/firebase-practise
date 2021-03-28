@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    place-items: center;
+    background-color: rgb(190, 229, 255);
+    margin: 2rem 24rem;
+    padding: 3rem;
+    border-radius: 2rem;
+    box-shadow: 0 2rem 1.5rem -1.7rem rgba(0, 0, 0, 0.8);
+}
+
+body{
+    overflow: hidden;
+}
+.userInput{
+    padding: .5rem;
+    border-radius: .23rem;
+    border: none;
+    outline: none;
+    width:29vw;
+}
+
+.userLabel{
+    padding:.51rem;
+}
+
+.btn{
+    margin-top: .67rem;
+    padding:.8rem;
+    width: 8rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    background-color: white;
+}
+
+.btn:hover{
+    background-color:rgb(59, 174, 250);
+}
+
+.btn:focus{
+    background-color:rgb(247, 168, 115);
+}
+
