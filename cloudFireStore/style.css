@@ -30,7 +30,7 @@ body{
 }
 
 .btn{
-    margin-top: .67rem;
+    margin-top: 2rem;
     padding:.8rem;
     width: 8rem;
     border-radius: 1rem;
@@ -39,12 +39,9 @@ body{
     background-color: white;
 }
 
-.btn:hover{
-    background-color:rgb(59, 174, 250);
-}
-
 .btn:focus{
-    background-color:rgb(247, 168, 115);
+    background-color:rgb(59, 174, 250);
+    color: white;
 }
 
 .error{
@@ -54,7 +51,7 @@ body{
 }
 
 .dataInDatabase{
-    background-color: red;
+    background-color: rgb(250, 162, 162);
     margin: -37rem 2rem;
     margin-right: 59rem;
     padding: 2rem;
@@ -84,4 +81,47 @@ body{
     border: none;
     outline: none;
     background-color: white;
+}
+
+.btn1:focus{
+    background-color: red;
+    color: white;
+}
+
+.updateData{
+    background-color: rgb(207, 163, 248);
+    padding: 3rem;
+    margin: 6rem 1rem;
+    margin-left: 58rem;
+    height: 30rem;
+    border-radius: 1rem;
+    box-shadow: 0 2rem 1.5rem -1.7rem rgba(0, 0, 0, 0.8);
+}
+
+.userLabel2{
+   margin: 6rem;
+}
+
+.userInput2{
+    padding: 1rem;
+    margin: 2rem 1rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+}
+
+.btn2{
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: white;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    width: 10rem;
+}
+
+.btn2:focus{
+    background-color: blueviolet;
+    color: white;
 }

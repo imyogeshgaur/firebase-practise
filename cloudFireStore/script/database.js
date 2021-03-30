@@ -1,3 +1,5 @@
+//todo Storing The Data
+
 const submitForm = async() =>{
     const dataInDatabase = document.querySelector('.dataInDatabase')
     const userName =document.querySelector('#userName').value;
@@ -27,6 +29,8 @@ const submitForm = async() =>{
     }
 }
 
+//? Fetching the Data
+
 const getData = async() =>{
     const userName1 =document.querySelector('#userName1')
     const userEmail1 =document.querySelector('#userEmail1')
@@ -35,7 +39,7 @@ const getData = async() =>{
 
     try {
         var db = firebase.firestore();
-        const dataPromise = await db.collection("users").doc("eznTlxL0gw19eA1jyFS2").get()
+        const dataPromise = await db.collection("users").doc("YgzVodCoMsNFT4C4ejKA").get()
         userName1.value = dataPromise.data().name;
         userEmail1.value = dataPromise.data().email;
         userAge1.value = dataPromise.data().age;
@@ -43,4 +47,30 @@ const getData = async() =>{
     } catch (error) {
        console.log(error); 
     }
+}
+
+//* Updating The Data
+
+const updateData = async() =>{
+    const valueProvided = document.querySelector('#value').value;
+
+    try {
+        var db = firebase.firestore();
+        await db.collection("users").doc("fsKpqbcBNkXweYlPIaqL").update({
+            name: valueProvided,
+        });
+    } catch (error) {
+       console.log(error); 
+    }
+}
+
+//! Deleting The Data
+
+const delteData = async()=>{
+        var db = firebase.firestore();
+        try {
+            await db.collection("users").doc("fsKpqbcBNkXweYlPIaqL").delete();
+        } catch (error) {
+            console.log(error);
+        }
 }
